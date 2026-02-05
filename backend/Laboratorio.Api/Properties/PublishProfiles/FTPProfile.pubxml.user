@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHpRlh+00JUCDlMDQSyVhqwAAAAACAAAAAAAQZgAAAAEAACAAAACzViUpoNN2GNPtnwMW3TMxHRs1ULzUX8CBwUjHOxegUgAAAAAOgAAAAAIAACAAAABAAyAyECzF0KPCmtyyxONaa7Xi/rz3WAvJNw8axLSaViAAAADrUr7SBqba94p5QfeMKv5MWxqPUXr5Ayc4I8I+BndL7UAAAABILb+4+jg/WxFU6sFjOGYai4qBwq0JGwV332sBB5ByTlypW2mwBRGHzBtTNbc6WNLTCD3CpXpkvJKYmuBL9KuR</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.246.30/www.backendJwt.somee.com</_PublishTargetUrl>
+    <History>True|2026-02-05T01:53:35.5527058Z||;False|2026-02-04T20:52:44.2932835-05:00||;True|2026-02-04T20:50:48.4595342-05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/04/2026 19:11:20</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/04/2026 20:16:07</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.deps.json">
+      <publishTime>02/04/2026 20:53:06</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.dll">
+      <publishTime>02/04/2026 20:53:06</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.exe">
+      <publishTime>02/04/2026 20:53:06</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.pdb">
+      <publishTime>02/04/2026 20:53:06</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.runtimeconfig.json">
+      <publishTime>02/04/2026 20:50:01</publishTime>
+    </File>
+    <File Include="Laboratorio.Api.staticwebassets.endpoints.json">
+      <publishTime>02/04/2026 20:50:08</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Authentication.JwtBearer.dll">
+      <publishTime>12/12/2025 12:42:40</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.OpenApi.dll">
+      <publishTime>12/12/2025 12:43:26</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Abstractions.dll">
+      <publishTime>07/22/2024 18:38:36</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>07/22/2024 18:39:16</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>07/22/2024 18:38:56</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>07/22/2024 18:38:56</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>07/22/2024 18:38:56</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>07/22/2024 18:38:36</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>12/18/2025 06:45:40</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>02/01/2026 06:42:24</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>02/01/2026 06:42:36</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>02/01/2026 06:42:38</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>07/22/2024 18:37:36</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>02/04/2026 20:53:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

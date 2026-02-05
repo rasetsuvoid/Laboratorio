@@ -1,0 +1,91 @@
+<div class="page">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Laboratorio de Seguridad</p>
+      <h1>JWT + Sesión HttpOnly + XSRF</h1>
+      <p class="lead">
+        El backend exige el token y un segundo factor de sesión (cookie HttpOnly + encabezado)
+        para responder.
+      </p>
+    </div>
+    <div class="stack">
+      <span>Angular</span>
+      <span>.NET 10</span>
+      <span>Controllers + Swagger</span>
+    </div>
+  </header>
+
+  <section class="panel">
+    <h2>Autenticación automática</h2>
+    <p class="muted">
+      El frontend se autentica automáticamente al cargar con una ApiKey encriptada.
+    </p>
+
+    <div class="actions">
+      <button type="button" (click)="autoLogin()" [disabled]="loading()">
+        Reintentar login
+      </button>
+      <button
+        type="button"
+        class="ghost"
+        (click)="logout()"
+        [disabled]="!auth.authenticated()"
+      >
+        Logout
+      </button>
+    </div>
+
+    <div class="status" [class.error]="status().includes('Error') || status().includes('Credenciales')">
+      {{ status() || 'Sin autenticación.' }}
+    </div>
+
+    <div class="token">
+      <span>Sesión:</span>
+      <code>{{ sessionBadge() }}</code>
+    </div>
+    <p class="muted">
+      El JWT se guarda en una cookie HttpOnly y no es accesible desde JavaScript.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Tipos de documentos</h2>
+    <p class="muted">
+      Endpoint protegido: <code>GET /api/getDocuments</code>.
+    </p>
+
+    <div class="actions">
+      <button type="button" (click)="loadDocuments()" [disabled]="!auth.authenticated()">
+        Refrescar documentos
+      </button>
+    </div>
+
+    <div class="status" [class.error]="documentsStatus().startsWith('Error')">
+      {{ documentsStatus() }}
+    </div>
+
+    <ul class="doc-list" *ngIf="documents().length">
+      <li *ngFor="let doc of documents()">
+        <span class="doc-code">{{ doc.code }}</span>
+        <span class="doc-name">{{ doc.name }}</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Endpoints protegidos (debug)</h2>
+    <p class="muted">
+      Estos endpoints requieren: <strong>JWT</strong> + <strong>cookie HttpOnly</strong> +
+      <strong>header X-XSRF-TOKEN</strong>.
+    </p>
+    <div class="actions">
+      <button type="button" (click)="callSecure('secure-data')" [disabled]="!auth.authenticated()">
+        GET /api/secure-data
+      </button>
+      <button type="button" (click)="callSecure('secure-profile')" [disabled]="!auth.authenticated()">
+        GET /api/secure-profile
+      </button>
+    </div>
+    <pre class="output">{{ secureResponse() }}</pre>
+  </section>
+</div>

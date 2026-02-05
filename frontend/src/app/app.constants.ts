@@ -1,0 +1,2 @@
+export const AUTO_API_KEY =
+  'CgVlm5qDUFZUzOVLCNt2QxWR4clDeG7mxe6JpJPff1SmWpppfdPqj+oQMD1DwmCpQrI2vy6iEwUxBEjva5CzCxQQ';
